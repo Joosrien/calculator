@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Title Goes here -->
+    <h1>Calculator</h1>
+    <!-- Display of the calculations being made -->
+    <div class="calcdisplay">
+        <p id="display"></p>
+    </div>
+    <!-- Display of the solutions after the calculations -->
+    <div class="solutiondisplay">
+        <p id="solution"></p>
+    </div>
+    <table>
+        <tr>
+            <!-- Numbers 7, 8, 9 and the multiplication operator -->
+            <td><button onclick="setNum(7)" id="7" value="7">7</button></td>
+            <td><button onclick="setNum(8)" id="8" value="8">8</button></td>
+            <td><button onclick="setNum(9)" id="9" value="9">9</button></td>
+            <td><button onclick="setsymbol('x')">x</button></td>
+        </tr>
+        <tr>
+            <!-- Numbers 4, 5, 6 and the subtraction operator -->
+            <td><button onclick="setNum(4)" id="4" value="4">4</button></td>
+            <td><button onclick="setNum(5)" id="5" value="5">5</button></td>
+            <td><button onclick="setNum(6)" id="6" value="6">6</button></td>
+            <td><button onclick="setsymbol('-')">-</button></td>
+        </tr>
+        <tr>
+            <!-- Numbers 1, 2, 3 and the addition operator -->
+            <td><button onclick="setNum(1)" id="1" value="1">1</button></td>
+            <td><button onclick="setNum(2)" id="2" value="2">2</button></td>
+            <td><button onclick="setNum(3)" id="3" value="3">3</button></td>
+            <td><button onclick="setsymbol('+')">+</button></td>
+        </tr>
+        <tr>
+            <!-- Number zero, dot, and division operator -->
+            <td colspan="2"><button onclick="setNum(0)" class="zero" value="0">0</button></td>
+            <td><button onclick="addDot()" id="dot">.</button></td>
+            <td><button onclick="setsymbol('/')">/</button></td>
+        </tr>
+        <tr>
+            <!-- Equals sign for solving and clearing display -->
+            <td colspan="3"><button onclick="solve()" id="equals" class="equalsbutton">=</button></td>
+            <td><button onclick="clearDisplay()" class="clearbutton">Clear</button></td>
+        </tr>
+    </table>
+</body>
+<script src="script.js"></script>
+</html>

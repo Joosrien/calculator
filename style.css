@@ -1,0 +1,70 @@
+/* Change it so that pemdas works */
+html, body {
+  height: 100%;
+  font-family: 'Outfit', sans-serif;
+}
+
+h1{
+  color: #EAAC8B;
+  border: solid 2px #E56B6F;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+body {
+  background-color: #355070;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  border: 2px solid #E56B6F;
+  padding: 25px;
+  border-radius: 25px;
+}
+
+.calcdisplay {
+  display: flex;
+  width: 15%;
+  height: 50px;
+  justify-content: center;
+  border: 2px solid #E56B6F;
+  color: #EAAC8B;
+  border-radius: 25px;
+  margin-bottom: 10px;
+}
+.solutiondisplay{
+    display: flex;
+    width: 15%;
+    height: auto;
+    justify-content: center;
+    border: 2px solid #E56B6F;
+    color: #EAAC8B;
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
+table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.zero{
+    width: 100%;
+    border-radius: 20px;
+}
+table td button{
+    width: 55px;
+    height: 55px;
+    padding: 0;
+    margin: 3px;
+    border-radius: 50%;
+    border: none;
+    color: #355070;
+    background-color: #EAAC8B;
+}
+.equalsbutton{
+  width: 100%;
+  border-radius: 25px;
+}
